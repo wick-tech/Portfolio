@@ -1,0 +1,208 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Poppins", sans-serif;
+    
+}
+
+:root{
+    --bg-color: #1f242d;
+    --secondary-bg-color: #323946;
+    --text-color :#Fff;
+    --main-color:#00DFC0;
+}
+
+html{
+    /* font-size: 62.5%; */
+    overflow-x: hidden;
+}
+
+body{
+    background-color: var(--bg-color)!important;
+    color: var(--text-color)!important;
+    font-family: "Poppins", sans-serif!important;
+}
+
+/* navbar styling  */
+.navbar-brand{
+    font-size: 2rem!important;
+    color: var(--text-color)!important;
+    transition: .3s;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: var(--main-color)!important;
+    transition: .3s;
+}
+.nav-link{
+    color: var(--text-color)!important;
+    font-size: 1.2rem!important;
+}
+
+/* section banner styling  */
+
+.detail h1,.about-text h2{
+    font-size: 3rem!important;
+
+}
+
+.blue{
+    color: var(--main-color);
+}
+
+#element{
+    color: var(--main-color);
+    font-size: 3rem;
+}
+
+/* about section  */
+
+.work-heading h2{
+    font-size: 2rem;
+}
+
+.find-me h2{
+    font-size: 2rem;
+}
+.icon-container span{
+    border: 2px solid var(--main-color);
+    border-radius: 20%;
+    transition: .5s!important;
+}
+
+.icon-container span:hover::before {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px var(--main-color);
+  }
+
+.icon-container span:hover {
+    color: var(--main-color);
+    box-shadow: 0 0 5px var(--main-color);
+    text-shadow: 0 0 2px var(--main-color);
+  }
+
+  /* footer styling  */
+  .footer-icon{
+    color: var(--main-color);
+  }
+
+
+/* ==== styling projects ====    */
+.btn-primary{
+    background-color: #0bb19b!important;
+    border: 1px solid var(--text-color)!important;
+}
+.btn-primary:hover{
+    background-color: #0e5f56!important;
+
+}
+
+.project-card{
+    border: 2px .1px 2px 2px solid var(--main-color)!important;
+    transition: all .5s ease 0s !important;
+    
+}
+
+.project-card{
+    box-shadow: 0 4px 5px 3px rgba(59, 221, 227, 0.459) !important;
+    color: white !important;
+    background-color: transparent !important;
+    opacity: 0.9 !important;
+    transition: all 0.5s ease 0s !important;
+    height: 100% !important;
+    margin: 20px 20px!important;
+  }
+  
+  .project-card:hover {
+    transform: scale(1.02) !important;
+    overflow: hidden !important;
+    box-shadow: 0 4px 4px 5px rgba(59, 221, 227, 0.459) !important;
+  }
+
+  /* navbar  */
+  .blur-bg {
+    backdrop-filter: blur(0); /* Initial blur amount */
+    -webkit-backdrop-filter: blur(0); /* For Safari */
+    background-color: rgba(92, 92, 92, 0.1); /* Adjust the opacity for brightness */
+    transition: backdrop-filter 0.5s ease-in-out, background-color 0.5s ease-in-out; /* Smooth transition */
+  }
+  
+  .navbar.fixed-top.blur-bg {
+    backdrop-filter: blur(10px); /* Adjust the blur amount as needed */
+    -webkit-backdrop-filter: blur(10px); /* For Safari */
+    background-color: rgba(145, 145, 145, 0.3); /* Adjust the opacity for brightness */
+  }
+  
+  /* Custom CSS to change the color of the burger icon to a brighter color */
+.navbar-toggler{
+    background-color: var(--main-color)!important;
+    border:2px solid #Fff!important;
+}
+
+/* contact styling  */
+.contact-section{
+    padding-top: 100px;
+   padding-bottom: 200px;
+  }
+
+  .contact-text h2{
+    font-size: 3.2rem!important;
+  }
+  .contact-content{
+    border: 1px solid var(--main-color);
+    padding: 20px;
+    border-radius: 20px;
+  }
+
+  /* footer styling  */
+  @media only screen and (max-width: 767px) {
+    .footer-icons{
+         text-align: center!important;
+    }
+  }
+  
+ 
+
+/* for view cv btn  */
+
+  /* Modal container */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5); /* Black background with transparency */
+}
+
+/* Modal content */
+.modal-content {
+  position: relative;
+  background-color: white;
+  margin: 10% auto;
+  padding: 20px;
+  width: 80%;
+  max-width: 800px;
+}
+
+/* Close button */
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 30px;
+  color: #aaa;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
